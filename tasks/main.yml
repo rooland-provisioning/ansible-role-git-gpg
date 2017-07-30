@@ -1,0 +1,25 @@
+---
+- name: Install packages
+  homebrew:
+    name: "{{ item.package_name }}"
+    state:  present
+  with_items:
+    - package_name: git
+    - package_name: gpg
+    - package_name: pinentry-mac
+
+- name: Configure gpg
+  lineinfile:
+    create: yes
+    dest:   ~/.gnupg/gpg.conf
+    line: no-tty
+
+- name: Configure gpg-agent
+  blockinfile:
+    block: |
+      use-standard-socket
+      pinentry-program /usr/local/bin/pinentry-mac
+    create: yes
+    dest:   ~/.gnupg/gpg-agent.conf
+  notify:
+    - Stop gpg-agent

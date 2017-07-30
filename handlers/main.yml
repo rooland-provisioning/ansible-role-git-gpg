@@ -1,0 +1,3 @@
+---
+- name: Stop gpg-agent
+  command:  killall gpg-agent
