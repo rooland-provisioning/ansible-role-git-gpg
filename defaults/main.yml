@@ -1,2 +1,4 @@
 ---
-# defaults file for ansible-role-gpg
+git_gpg:
+  git:
+    signing_key: 572528979443740F

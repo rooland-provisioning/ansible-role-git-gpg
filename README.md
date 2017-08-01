@@ -6,6 +6,22 @@ Very base setup of GPG. It installs GPG, app for entering pin and Git. Motivatio
 
 This role is installing software via [Homebrew](https://brew.sh), so installed Homebrew would be nice ;)
 
+## Role Variables
+
+A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+
+### Defaults
+
+|             Name          |  Type  |   Description                                                                                                       |
+|---------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
+| git_gpg.git.signing_key   | String | Default signing key for Git. See [user.signingKey](https://git-scm.com/docs/git-config#git-config-usersigningKey).  |
+
+### Variables
+
+|             Name          |  Type  |   Description                                                                                                       |
+|---------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
+|                           | String |                                                                                                                     |
+
 ## Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
