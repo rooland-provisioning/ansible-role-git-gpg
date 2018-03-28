@@ -36,6 +36,7 @@ galaxy_info:
     - name: macOS
       version:
         - Sierra
+        - High Sierra
     - name: MacOSX
       versions:
         - 10.11
