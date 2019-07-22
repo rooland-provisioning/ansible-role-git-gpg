@@ -8,12 +8,6 @@
     - package_name: gpg
     - package_name: pinentry-mac
 
-- name: Configure gpg
-  lineinfile:
-    create: yes
-    dest:   ~/.gnupg/gpg.conf
-    line: no-tty
-
 - name: Configure signing key
   git_config:
     name:   user.signingKey
