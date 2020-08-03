@@ -1,4 +1,5 @@
 ---
 git_gpg:
   git:
-    signing_key: 572528979443740F
+    auto_sign:    'true'
+    signing_key:  572528979443740F

@@ -12,9 +12,10 @@ A description of the settable variables for this role should go here, including 
 
 ### Defaults
 
-|             Name          |  Type  |   Description                                                                                                       |
-|---------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
-| git_gpg.git.signing_key   | String | Default signing key for Git. See [user.signingKey](https://git-scm.com/docs/git-config#git-config-usersigningKey).  |
+|             Name          |   Type  |   Description                                                                                                                                  |
+|---------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| git_gpg.git.signing_key   | String  | Default signing key for Git. See [user.signingKey](https://git-scm.com/docs/git-config#git-config-usersigningKey).                             |
+| git_gpg.git.auto_sign     | Boolean | If commits shall be signed automatically. See [user.gpgsign](https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitgpgSign).  |
 
 ### Variables
 

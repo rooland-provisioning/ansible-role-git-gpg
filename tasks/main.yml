@@ -14,6 +14,12 @@
     scope:  global
     value:  "{{ git_gpg.git.signing_key }}"
 
+- name: Sign commits automatically
+  git_config:
+    name:   commit.gpgsign
+    scope:  global
+    value:  "{{ git_gpg.git.auto_sign }}"
+
 - name: Configure gpg-agent
   blockinfile:
     block: |
