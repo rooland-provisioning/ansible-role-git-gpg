@@ -1,4 +1,7 @@
+---
 galaxy_info:
+  role_name: git_gpg
+  namespace: rooland_provisioning
   author: Mailo Světel
   description: Very base setup of GPG
   company: Rooland provisioning
@@ -27,7 +30,7 @@ galaxy_info:
   # this branch. If Travis integration is configured, only notifications for this
   # branch will be accepted. Otherwise, in all cases, the repo's default branch
   # (usually master) will be used.
-  #github_branch:
+  # github_branch:
 
   #
   # platforms is a list of platforms, and each platform has a name and a list of versions.

@@ -1,7 +1,7 @@
 ---
 - name: Install packages
-  homebrew:
-    name: "{{ item.package_name }}"
+  ansible.builtin.homebrew:
+    name:   "{{ item.package_name }}"
     state:  present
   with_items:
     - package_name: git
@@ -9,23 +9,24 @@
     - package_name: pinentry-mac
 
 - name: Configure signing key
-  git_config:
+  ansible.builtin.git_config:
     name:   user.signingKey
     scope:  global
     value:  "{{ git_gpg.git.signing_key }}"
 
 - name: Sign commits automatically
-  git_config:
+  ansible.builtin.git_config:
     name:   commit.gpgsign
     scope:  global
     value:  "{{ git_gpg.git.auto_sign }}"
 
 - name: Configure gpg-agent
-  blockinfile:
+  ansible.builtin.blockinfile:
     block: |
       use-standard-socket
       pinentry-program /usr/local/bin/pinentry-mac
-    create: yes
+    create: true
     dest:   ~/.gnupg/gpg-agent.conf
+    mode:   u+rw,g-r,o-r
   notify:
     - Stop gpg-agent
