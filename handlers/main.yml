@@ -1,3 +1,4 @@
 ---
 - name: Stop gpg-agent
-  ansible.builtin.command:  killall gpg-agent
+  ansible.builtin.command: killall gpg-agent
+  ignore_errors: true
