@@ -1,4 +1,4 @@
-# Git -- GPG
+# Git — GPG
 
 Very base setup of GPG. It installs GPG, app for entering pin and Git. Motivation for creating this role is to prepare system for [signing Git commits](https://help.github.com/articles/signing-commits-using-gpg/). I based this role on stuff from [Set up Keybase.io, GPG & Git to sign commits on GitHub](https://github.com/pstadler/keybase-gpg-github). This guide was a big help and I recommend to check it at least quickly to everyone.
 
