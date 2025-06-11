@@ -1,7 +1,6 @@
 ---
 galaxy_info:
-  role_name: git_gpg
-  namespace: rooland_provisioning
+  role_name: git-gpg
   author: Mailo Světel
   description: Very base setup of GPG
   company: Rooland provisioning
